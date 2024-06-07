@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            padding: 2em 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            color: #333;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            scroll-snap-align: center;
+            flex-shrink: 0;
+        }
+        .skills, .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skill, .contact-item {
+            flex: 1 1 30%;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .social-links a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>个人网页</h1>
+    </header>
+    <div class="container">
+        <section class="section" id="about">
+            <h2>个人简介</h2>
+            <p>这里是您的个人简介部分，简要介绍自己，包括您的背景、兴趣和职业目标。</p>
+        </section>
+        
+        <section class="section" id="experience">
+            <h2>工作经历</h2>
+            <p>列出您的工作经历，包括职位、公司名称和工作时间。</p>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2>项目展示</h2>
+            <div class="carousel">
+                <img src="project1.jpg" alt="项目1">
+                <img src="project2.jpg" alt="项目2">
+                <img src="project3.jpg" alt="项目3">
+            </div>
+            <p>这里展示您的主要项目，可以包含图像轮播来展示项目截图或图片。</p>
+            <div>
+                <video width="100%" controls>
+                    <source src="project_video.mp4" type="video/mp4">
+                    您的浏览器不支持视频标签。
+                </video>
+            </div>
+        </section>
+        
+        <section class="section" id="skills">
+            <h2>技能列表</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>技能1</h3>
+                    <p>技能1的描述。</p>
+                </div>
+                <div class="skill">
+                    <h3>技能2</h3>
+                    <p>技能2的描述。</p>
+                </div>
+                <div class="skill">
+                    <h3>技能3</h3>
+                    <p>技能3的描述。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="contact">
+            <h2>联系方式</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>电子邮件</h3>
+                    <p>example@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>电话</h3>
+                    <p>+123 456 7890</p>
+                </div>
+                <div class="contact-item">
+                    <h3>地址</h3>
+                    <p>某某市某某区某某路123号</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 个人网页. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
